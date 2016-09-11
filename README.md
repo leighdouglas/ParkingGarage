@@ -10,4 +10,5 @@ Instructions:
 - Test the changes to the Parking Garage's ```toString``` in the 
 - Create your own concrete subclasses of AbstractCar (Which methods will you have to override?)
 - In the Parking Garage class, implement the ```parkCar()``` method and the ```removeCar`` method.
-- Test the ParkingGarage's method operations in the main class. 
+- Test the ParkingGarage's method operations in the main class.
+
