@@ -1,6 +1,6 @@
 # ParkingGarage
 
-This application simulates a Parking Garage. 
+Clone and import the following application, which simulates a Parking Garage. 
 
 Instructions: 
 
