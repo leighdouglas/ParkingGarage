@@ -16,6 +16,7 @@ public class ParkingGarage {
     private Map<Integer, List<AbstractCar>> internalMap;
 
     public ParkingGarage(int numberOfFloors){
+
         makeMap(numberOfFloors);
     }
 
@@ -27,12 +28,20 @@ public class ParkingGarage {
     }
 
     @Override
-    public String toString() {
+    public String toString() { //this method is performed automatically on every object of this class when it is being printed because it is inherited from the object class (behind the scenes functions)
+        String allCars = "";
+        for(int floor : internalMap.keySet()){
+            allCars += internalMap.get(floor) + "\n";
+        }
+        return allCars;
+
         /*TODO - Modify the toString method to print every car in your Parking Garage*/
-        return "I'm a parking Garage";
     }
 
     public void parkCar(int number, AbstractCar car){
+
+        internalMap.get(number).add(car);
+
         /*TODO - Implement this method by retrieving the List of Cars,
          and adding the parameterizer car to it.*/
 
@@ -41,6 +50,7 @@ public class ParkingGarage {
     public void removeCar(int number, AbstractCar car){
           /*TODO - Implement this method by retrieving the List of Cars,
          and removing the parameterizer car from it.*/
+        internalMap.get(number).remove(car);
     }
 
 
